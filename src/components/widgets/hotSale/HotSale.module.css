@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+.hot_sale_main {
+  width: 30rem;
+  height: 15rem;
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 1000px rgb(255, 255, 255);
+  border-radius: 1rem;
+}
+.hot_sale_title {
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.hot_sale_description {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 0.1rem;
+}
+.hot_sale_description button {
+  border: none;
+  width: 15rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgb(227, 179, 117);
+  background-color: black;
+  color: rgb(227, 179, 117);
+}
+
+@media screen and (max-width: 1440px) {
+  .hot_sale_main {
+    width: 30rem;
+    height: 15rem;
+  }
+  .hot_sale_title {
+    font-size: 1.5rem;
+  }
+  .hot_sale_description {
+    font-size: 1.3rem;
+  }
+  .hot_sale_description button {
+    width: 15rem;
+    height: 2.5rem;
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  
+}
+@media screen and (max-width: 320px) {
+  
+}
+@media screen and (max-width: 320px) {
+  
+}
+

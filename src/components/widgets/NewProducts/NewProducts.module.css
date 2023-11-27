@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+.main_newProducts{
+   display: grid;
+   grid-template-columns:  1fr;
+   grid-row: .2fr 1.8fr; 
+   background-color: rgba(1, 1, 1, 0);
+   width: auto;
+   height: auto;
+   text-align: center;
+   border: none;
+   padding-bottom: 1rem;
+   padding-top: 1rem;
+   position: absolute;
+   top: 2rem;
+   right: 1rem;
+
+}
+.main_newProducts h2 {
+   margin: 0;
+   padding: .5rem;
+   font-size: 3rem;
+   font-family: "Roboto Condensed", sans-serif;
+}
+
+
+.main_newProducts_card{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+margin: 0 auto;
+gap: 1rem;
+}
+    
