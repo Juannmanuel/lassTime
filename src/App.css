@@ -1,15 +1,68 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1.8fr 1fr 1fr 1fr .2fr;
+  grid-template-rows:  1.8fr 1fr 1fr 1fr 1fr .2fr;
   width: 100%;
-  height: auto;
+  height: 750vh;
   overflow-y: auto;
-  background-color: #e9ecef;
+  background-color: rgb(255, 255, 255);
   scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  gap: 3rem;
+
 }
+
 .item {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-snap-align: start;
+
+}
+.item_sale{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 180vh;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-snap-align: start;
+}
+.item_header{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 200vh;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-snap-align: start;
+
+}
+.item_footer {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-snap-align: start;
+
+}
+.item_featured{
   padding: 0;
   margin: 0;
   display: flex;
@@ -18,31 +71,78 @@
   align-items: center;
   height: 100vh;
   width: 100%;
-  scroll-snap-align: start;
   overflow-x: hidden;
-  border: 1px solid black;
+  scroll-snap-align: start;
+
 }
-.item-header{
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  background-color: #e1e7e7;
-  border: 1px solid black;
+
+/*============== Scren 770=============*/
+@media (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  1.8fr 1fr 1fr 1fr 1fr .2fr;
+    width: 100%;
+    height: 740vh;
+    overflow-y: auto;
+    background-color: rgb(255, 255, 255);
+    scroll-snap-type: y mandatory;
+    gap: 1rem;
+  
+  }
+  .item_featured{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 101vh;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-snap-align: start;
+
+  }
 }
-.item-footer{
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  background-color: #e1e7e7;
-  border: 1px solid black;
+/*============== Scren 425=============*/
+@media (max-width: 425px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  1.8fr 1fr 1fr 1fr 1fr .2fr;
+    width: 100%;
+    height: 945vh;
+    overflow-y: auto;
+    background-color: rgb(255, 255, 255);
+    scroll-snap-type: y mandatory;
+    gap: 0rem;
+
+
+  
+  }
+  .item_featured{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 270vh;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-snap-align: start;
+
+  }
+  .item_sale{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 230vh;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-snap-align: start;
+  }
 }

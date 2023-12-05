@@ -7,7 +7,7 @@ const NewProducts = () => {
       <div className={style.main_newProducts_card}>
         {newProducts.map((item, index) => (
           <IndividualCards
-          key={index}
+            key={index}
             image={item.image}
             name={item.name}
             price={item.price}

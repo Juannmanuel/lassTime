@@ -1,64 +1,135 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Gothic&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,300&display=swap");
-
-
-.card {
-  width: 15rem;
-  height: 20rem;
-  perspective: 1000px;
-}
-
-.card_inner {
+.productCard {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
   width: 100%;
   height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.999s;
+  box-shadow: 6px 6px 12px #cecece, -6px -6px 12px #f2f2f2;
 }
 
-.card:hover .card_inner {
-  transform: rotateY(180deg);
+.imageContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
-.card_front,
-.card_back {
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.9s ease;
+}
+
+.productOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  object-fit: contain;
+}
+
+.viewButton {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
+  background-color: #86868675;
 }
 
-.card_front {
-  background-color: #6A2C70;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: rotateY(0deg);
+.viewButton button {
+  position: absolute;
+  top: 85%;
+  left: 2.8rem;
+  border: none;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 10px rgb(227, 179, 117);
+  background-color: black;
+  color: rgb(227, 179, 117);
+  cursor: pointer;
 }
-.card_front img {
-  width: 100%;
-  height: 100%;
-}
-.card_back h2{
+
+.viewButton h2,
+.viewButton p,
+.viewButton span {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 2rem;
-}
-.card_back ul{
-text-align: left;
-font-family: "Roboto Condensed", sans-serif;
-}
-.card_back span{
-  font-size: 2rem;
-  }
-.card_back {
-  background-color: #0000004e;
-  color: #fff;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: space-around;
-  transform: rotateY(180deg);
+  margin: 0;
+  padding: 0;
   text-align: center;
-  padding: 0.5rem;
+  letter-spacing: 0.1rem;
 }
+
+.viewButton h2 {
+  font-size: 2rem;
+}
+
+.viewButton p {
+  font-size: 1rem;
+}
+
+.viewButton span {
+  font-size: 4rem;
+}
+
+.productCard:hover .productImage {
+  transform: scale(0.8);
+}
+
+.productCard:hover .productOverlay {
+  opacity: 1;
+}
+/*============== Scren 1024=============*/
+@media (max-width: 1024px) {
+  .viewButton button {
+    top: 87%;
+    left: 10%;
+    width: 8rem;
+  }
+  .viewButton h2 {
+    font-size: 1.5rem;
+  }
+  
+  .viewButton p {
+    font-size: 1rem;
+  }
+  
+  .viewButton span {
+    font-size: 2.5rem;
+  }
+}
+/*============== Scren 770=============*/
+@media (max-width: 768px) {
+  .viewButton button {
+    top: 85%;
+    left: 15%;
+    width: 8rem;
+    height: 1.5rem;
+  }
+}
+/*============== Scren 425=============*/
+@media (max-width: 425px) {
+  .viewButton button {
+    top: 85%;
+    left: 27%;
+    width: 8rem;
+    height: 2rem;
+  }
+}
+/*============== Scren 375=============*/
+@media (max-width: 375px) {}

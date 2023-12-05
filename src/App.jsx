@@ -7,28 +7,32 @@ import Sale from "./components/sale/sale";
 import Featured from "./components/featured/Featured";
 import Publicity from "./components/publicity/Publicity";
 import Footer from "./components/footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <main className="grid-container">
-      <head className="item-header">
+    <section className="grid-container">
+      <head className="item_header">
         <Header />
       </head>
-      <section className="item">
-        <Sale />
+      <section className="item_featured">
+        <Featured />
       </section>
       <section id="sale" className="item">
-        <Featured />
+        <Publicity />
+      </section>
+      <section className="item_sale">
+        <Sale />
       </section>
       <section className="item">
         <Publicity />
       </section>
-      <footer className="item-footer">
-        <Footer/>
+      <footer className="item_footer">
+        <Footer />
       </footer>
-    </main>
+    </section>
   );
 }
 

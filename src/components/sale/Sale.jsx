@@ -1,9 +1,27 @@
 import style from "./Sale.module.css"
 
+
+
 const Sale = () => {
  return (
-    <div>
-        <h1>Sale</h1>
+    <div className={style.main_sale}>
+        <div className={style.products}>
+        </div>
+        <div className={style.products}>
+
+        </div>
+        <div className={style.products}>
+
+        </div>
+        <div className={style.products}>
+
+        </div>
+        <div className={style.products}>
+
+        </div>
+        <div className={style.products}>
+
+        </div>
     </div>
  )   
 }
