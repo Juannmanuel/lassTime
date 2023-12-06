@@ -3,7 +3,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1.8fr 1fr 1fr 1fr 1fr 0.2fr;
   width: 100%;
-  height: 620vh;
+  height: 645vh;
   overflow-y: auto;
   background-color: rgb(255, 255, 255);
   position: relative;
@@ -66,7 +66,7 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   overflow-x: hidden;
   scroll-snap-align: start;
@@ -94,7 +94,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1.8fr 1fr 1fr 1fr 1fr 0.2fr;
     width: 100%;
-    height: 830vh;
+    height: auto;
     overflow-y: auto;
     background-color: rgb(255, 255, 255);
 
@@ -107,7 +107,7 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    height: 200vh;
+    height: 160vh;
     width: 100%;
     overflow-x: hidden;
   }

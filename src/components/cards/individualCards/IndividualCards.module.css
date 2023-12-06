@@ -25,7 +25,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transition: transform 0.9s ease;
+  transition: transform 0.5s ease;
 }
 
 .productOverlay {
@@ -37,7 +37,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   align-items: center;
   opacity: 0;
   transition:all .8s ease-in-out;
@@ -53,6 +52,7 @@
   width: 100%;
   height: 100%;
   background-color: #86868675;
+  padding: .5rem 1rem;
 }
 
 .viewButton button {
@@ -130,10 +130,10 @@
 /*============== Scren 425=============*/
 @media (max-width: 425px) {
   .viewButton button {
-    top: 85%;
+    top: 80%;
     left: 27%;
     width: 8rem;
-    height: 2rem;
+    height: 1.8rem;
   }
 }
 /*============== Scren 375=============*/

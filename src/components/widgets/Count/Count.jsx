@@ -1,6 +1,6 @@
 import style from "./Count.module.css";
 import CountUp from "react-countup";
-import { FaUsers } from "react-icons/fa6";
+import { CgMathPlus } from "react-icons/cg";
 
 
 const Count = ({ title }) => {
@@ -9,32 +9,58 @@ const Count = ({ title }) => {
       case "products":
         return (
           <p>
-            Explore our collection of{" "}
-            {<CountUp className={style.count_number} start={0} end={80} delay={0.5} duration={15} />} featured
-            jewelry pieces and be captivated.
+            {
+              <CountUp
+                className={style.count_number}
+                start={0}
+                end={85}
+                delay={2.5}
+                duration={15}
+              />
+            }
           </p>
         );
       case "clients":
         return (
           <p>
-            Over {<CountUp className={style.count_number} start={0} end={1250} delay={0.5} duration={15} />}
-            {" "}satisfied clients adorned with our unique jewelry.
+            {
+              <CountUp
+                className={style.count_number}
+                start={0}
+                end={1500}
+                delay={2.5}
+                duration={15}
+              />
+            }
           </p>
         );
-      case "shipping":
+      case "shipments":
         return (
           <p>
-           Elegant shipping to{" "}
-            {<a><CountUp className={style.count_number} start={0} end={15} delay={0.5} duration={15} /></a>}{" "}
-            destinations, allowing you to shine anywhere.`
+            {
+              <CountUp
+                className={style.count_number}
+                start={0}
+                end={2000}
+                delay={2.5}
+                duration={10}
+              />
+            }{" "}
           </p>
         );
     }
   };
   return (
     <div className={style.main_count}>
-      <h2><u>{title.toUpperCase()}</u></h2>
-      <div className={style.count}>{detailCount(title)}</div>
+      <h2>
+        <u>{title.toUpperCase()}</u>
+      </h2>
+      <div className={style.count}>
+        <div>
+        <CgMathPlus />
+        </div>
+        <div>{detailCount(title)}</div>
+      </div>
     </div>
   );
 };

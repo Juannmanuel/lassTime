@@ -31,17 +31,20 @@ const Featured = () => {
             />
           ))}
         </div>
-        <ScrollTrigger
-          onEnter={() => setCounterOn(true)}
-          onExit={() => setCounterOn(false)}
-        >
-          {" "}
-          <div className={style.envio}>
+        <div className={style.envio}>
+          <div className={style.counters}>
             <Count title={"products"} />
             <Count title={"clients"} />
-            <Count title={"shipping"} />
+            <Count title={"shipments"} />
           </div>
-        </ScrollTrigger>
+          <p className={style.p_featured}>
+            - Over 80 products to choose from, ensuring you find the perfect
+            piece. <br />
+            - Over 2,500 satisfied customers trust our quality and attention to
+            detail. <br />- Shipping available to 15 countries, bringing our
+            exquisite jewelry to the world.
+          </p>
+        </div>
       </div>
     </section>
   );

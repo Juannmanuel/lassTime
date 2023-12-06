@@ -12,7 +12,7 @@ const IndividualCards = ({ image, name, material, price, details }) => {
           <h2>{name.toUpperCase()}</h2>
           <p>({material})</p>
           <span>${price},00</span>
-          <button>Ver Producto</button>
+          <button>Quick view</button>
           </div>
       </div>
     </div>
