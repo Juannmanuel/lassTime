@@ -1,17 +1,26 @@
 import style from "./Navbar.module.css";
-import image from "../../assets/images/logo.jpeg";
+import image from "../../assets/images/products/logo.jpeg";
+import { FaShoppingCart, FaShoppingBag  } from "react-icons/fa";
 const Navbar = () => {
   return (
     <div className={style.navbar_main}>
+      <div className={style.aceess}></div>
       <div className={style.logo}>
-        <h1>lassTime</h1>
+        <img src={image} alt="" />
       </div>
-      <div className={style.titles}>
-        <span>Home</span>
-        <span>About</span>
-        <span>Shop</span>
-        <span>Featured</span>
-        <span>Products</span>
+      <div className={style.icons_container}>
+        <div className={style.icons}>
+        <FaShoppingBag style={{cursor:"pointer"}}/>
+        <FaShoppingCart style={{cursor:"pointer"}}/>
+        </div>
+        <section className={style.search_nav}>
+          <input
+            type="text"
+            placeholder="Search Product"
+            name="text"
+            class="input"
+          />
+        </section>
       </div>
     </div>
   );

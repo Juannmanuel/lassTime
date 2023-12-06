@@ -14,6 +14,9 @@ function App() {
 
   return (
     <section className="grid-container">
+      <nav className="item_nav">
+      <Navbar/>
+      </nav>
       <head className="item_header">
         <Header />
       </head>

@@ -5,6 +5,7 @@ import Count from "../widgets/Count/Count";
 import ScrollTrigger from "react-scroll-trigger";
 import { useState } from "react";
 
+
 const Featured = () => {
   const [counterOn, setCounterOn] = useState(false);
   return (
@@ -34,12 +35,12 @@ const Featured = () => {
           onEnter={() => setCounterOn(true)}
           onExit={() => setCounterOn(false)}
         >
-          {counterOn && <div className={style.envio}>
+          {" "}
+          <div className={style.envio}>
             <Count title={"products"} />
             <Count title={"clients"} />
             <Count title={"shipping"} />
-          </div> }
-         
+          </div>
         </ScrollTrigger>
       </div>
     </section>

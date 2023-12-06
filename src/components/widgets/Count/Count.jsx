@@ -1,5 +1,7 @@
 import style from "./Count.module.css";
 import CountUp from "react-countup";
+import { FaUsers } from "react-icons/fa6";
+
 
 const Count = ({ title }) => {
   const detailCount = (title) => {
@@ -23,7 +25,7 @@ const Count = ({ title }) => {
         return (
           <p>
            Elegant shipping to{" "}
-            {<CountUp className={style.count_number} start={0} end={15} delay={0.5} duration={15} />}{" "}
+            {<a><CountUp className={style.count_number} start={0} end={15} delay={0.5} duration={15} /></a>}{" "}
             destinations, allowing you to shine anywhere.`
           </p>
         );
@@ -31,7 +33,7 @@ const Count = ({ title }) => {
   };
   return (
     <div className={style.main_count}>
-      <h2>{title.toUpperCase()}</h2>
+      <h2><u>{title.toUpperCase()}</u></h2>
       <div className={style.count}>{detailCount(title)}</div>
     </div>
   );

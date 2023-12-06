@@ -1,14 +1,13 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows:  1.8fr 1fr 1fr 1fr 1fr .2fr;
+  grid-template-rows: 1.8fr 1fr 1fr 1fr 1fr 0.2fr;
   width: 100%;
-  height: 750vh;
+  height: 620vh;
   overflow-y: auto;
   background-color: rgb(255, 255, 255);
-  scroll-snap-type: y mandatory;
-  gap: 3rem;
-
+  position: relative;
+  gap: 1rem;
 }
 
 .item {
@@ -18,36 +17,35 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: 120vh;
   width: 100%;
   overflow-x: hidden;
   scroll-snap-align: start;
-
+  border: 1px solid black;
 }
-.item_sale{
+.item_sale {
   padding: 0;
   margin: 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  height: 180vh;
+  height: 150vh;
   width: 100%;
   overflow-x: hidden;
-  scroll-snap-align: start;
+  border: 1px solid black;
 }
-.item_header{
+.item_header {
   padding: 0;
   margin: 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  height: 200vh;
+  height: 100vh;
   width: 100%;
   overflow-x: hidden;
-  scroll-snap-align: start;
-
+  border: 1px solid black;
 }
 .item_footer {
   padding: 0;
@@ -59,10 +57,9 @@
   height: 30vh;
   width: 100%;
   overflow-x: hidden;
-  scroll-snap-align: start;
-
+  border: 1px solid black;
 }
-.item_featured{
+.item_featured {
   padding: 0;
   margin: 0;
   display: flex;
@@ -73,35 +70,21 @@
   width: 100%;
   overflow-x: hidden;
   scroll-snap-align: start;
-
+  border: 1px solid black;
+}
+.item_nav {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  background-color: aliceblue;
 }
 
 /*============== Scren 770=============*/
 @media (max-width: 768px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:  1.8fr 1fr 1fr 1fr 1fr .2fr;
-    width: 100%;
-    height: 740vh;
-    overflow-y: auto;
-    background-color: rgb(255, 255, 255);
-    scroll-snap-type: y mandatory;
-    gap: 1rem;
-  
-  }
-  .item_featured{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    height: 101vh;
-    width: 100%;
-    overflow-x: hidden;
-    scroll-snap-align: start;
-
+  .item_nav {
+    height: 12vh;
   }
 }
 /*============== Scren 425=============*/
@@ -109,40 +92,37 @@
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:  1.8fr 1fr 1fr 1fr 1fr .2fr;
+    grid-template-rows: 1.8fr 1fr 1fr 1fr 1fr 0.2fr;
     width: 100%;
-    height: 945vh;
+    height: 830vh;
     overflow-y: auto;
     background-color: rgb(255, 255, 255);
-    scroll-snap-type: y mandatory;
+
     gap: 0rem;
-
-
-  
   }
-  .item_featured{
+  .item_featured {
     padding: 0;
     margin: 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    height: 270vh;
+    height: 200vh;
     width: 100%;
     overflow-x: hidden;
-    scroll-snap-align: start;
-
   }
-  .item_sale{
+  .item_sale {
     padding: 0;
     margin: 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    height: 230vh;
+    height: 280vh;
     width: 100%;
     overflow-x: hidden;
-    scroll-snap-align: start;
+  }
+  .item_nav{
+    height: 10vh;
   }
 }
