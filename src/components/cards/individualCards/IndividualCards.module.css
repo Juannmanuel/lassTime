@@ -102,20 +102,20 @@
 @media (max-width: 1024px) {
   .viewButton button {
     top: 84%;
-    left: 9%;
+    left: 25%;
     width: 8rem;
-    height: 1.5rem;
+    height: 2rem;
   }
   .viewButton h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   
   .viewButton p {
-    font-size: .8rem;
+    font-size: 1rem;
   }
   
   .viewButton span {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 /*============== Scren 770=============*/
@@ -131,9 +131,20 @@
 @media (max-width: 425px) {
   .viewButton button {
     top: 80%;
-    left: 27%;
+    left: 25%;
     width: 8rem;
     height: 1.8rem;
+  }
+  .viewButton h2 {
+    font-size: 1.2rem;
+  }
+  
+  .viewButton p {
+    font-size: .8rem;
+  }
+  
+  .viewButton span {
+    font-size: 2rem;
   }
 }
 /*============== Scren 375=============*/

@@ -17,9 +17,9 @@ function App() {
       <nav className="item_nav">
       <Navbar/>
       </nav>
-      <head className="item_header">
+      <header className="item_header">
         <Header />
-      </head>
+      </header>
       <section className="item_featured">
         <Featured />
       </section>

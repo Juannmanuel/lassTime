@@ -1,29 +1,20 @@
-import style from "./Sale.module.css"
-
-
+import style from "./Sale.module.css";
+import { products } from "../../data/newProduct";
 
 const Sale = () => {
- return (
+  return (
     <div className={style.main_sale}>
-        <div className={style.products}>
-        </div>
-        <div className={style.products}>
-
-        </div>
-        <div className={style.products}>
-
-        </div>
-        <div className={style.products}>
-
-        </div>
-        <div className={style.products}>
-
-        </div>
-        <div className={style.products}>
-
-        </div>
+      {products.map((item, index) => {
+        return (
+          <div key={index} className={style.products}>
+            <img src={item.image1} alt="image" />
+            <img src={item.image2} alt="image" />
+            <button className={style.btn_sale}>Quick view</button>
+          </div>
+        );
+      })}
     </div>
- )   
-}
+  );
+};
 
-export default Sale
+export default Sale;

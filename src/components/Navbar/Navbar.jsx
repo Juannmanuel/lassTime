@@ -18,7 +18,6 @@ const Navbar = () => {
             type="text"
             placeholder="Search Product"
             name="text"
-            class="input"
           />
         </section>
       </div>

@@ -7,7 +7,6 @@ import { useState } from "react";
 
 
 const Featured = () => {
-  const [counterOn, setCounterOn] = useState(false);
   return (
     <section className={style.featured_main}>
       <header className={style.description_featured}>
