@@ -1,16 +1,14 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+
 import Header from "./components/header/Header";
+import Navbar from "./components/Navbar/Navbar";
 import Sale from "./components/sale/Sale";
 import Featured from "./components/featured/Featured";
 import Publicity from "./components/publicity/Publicity";
 import Footer from "./components/footer/Footer";
-import Navbar from "./components/Navbar/Navbar";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+
 
   return (
     <section className="grid-container">
