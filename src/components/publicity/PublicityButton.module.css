@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Whisper&display=swap");
+.publicityButton_main {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  height: 100%;
+  width: 100%;
+  padding: 1rem 5rem;
+  gap: 1rem;
+  overflow: hidden;
+}
+.image_publicityButton {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.image_publicityButton img {
+  width: 97%;
+  height: 97%;
+  object-fit: cover;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 7px 7px 8px #c3c3c3, -7px -7px 8px #fdfdfd;
+}
+.description_publicityButton {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.description_publicityButton button {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgb(227, 179, 117);
+  background-color: black;
+  color: rgb(227, 179, 117);
+  width: 10rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+.description_publicityButton p {
+  font-family: "Whisper", cursive;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+}
+.description_publicityButton h2 {
+  font-family: "Josefin Sans", sans-serif;
+}
+.description_publicityButton h4 {
+  font-family: "Josefin Sans", sans-serif;
+}
+.filter_publicityButton {
+  visibility: 0;
+}
+.button_descriprion {
+  display: none;
+}
+@media (max-width: 1440px) {
+  .publicityButton_main {
+    padding: 1rem 4rem;
+  }
+  .description_publicityButton p {
+    font-size: 1.9rem;
+  }
+  .description_publicityButton button {
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px #e3b375;
+    background-color: #000;
+    color: #e3b375;
+    width: 13rem;
+    height: 3rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .publicityButton_main {
+    padding: 0rem;
+  }
+  .description_publicityButton {
+    padding: 8rem 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .description_publicityButton p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.7rem;
+  }
+  .description_publicityButton button {
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px #e3b375;
+    background-color: #000;
+    color: #e3b375;
+    width: 13rem;
+    height: 3rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 425px) {
+  .publicityButton_main {
+    height: 100%;
+    width: 100%;
+    padding: 0rem 0.5rem;
+    background-image: url("../../assets/images/products/publicityButton1.jpeg");
+    background-size: cover;
+    background-position-x: -3rem;
+
+    text-align: left;
+    position: relative;
+  }
+  .image_publicityButton {
+    display: none;
+  }
+  .description_publicityButton {
+    height: 14rem;
+    width: 80%;
+    position: absolute;
+    bottom: 3.5rem;
+    left: 2.5rem;
+    backdrop-filter: blur(2px);
+    padding: 1rem 0rem;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .description_publicityButton button {
+    width: 14rem;
+    height: 2.4rem;
+    font-size: 1.2rem;
+  }
+
+  .p_publicityButton {
+    display: none;
+  }
+}

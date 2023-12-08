@@ -6,6 +6,7 @@ import Featured from "./components/featured/Featured";
 import Publicity from "./components/publicity/Publicity";
 import Footer from "./components/footer/Footer";
 import "./App.css";
+import PublicityButton from "./components/publicity/PublicityButton";
 
 function App() {
 
@@ -28,7 +29,7 @@ function App() {
         <Sale />
       </section>
       <section className="item">
-        <Publicity />
+        <PublicityButton />
       </section>
       <footer className="item_footer">
         <Footer />
