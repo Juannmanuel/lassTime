@@ -96,7 +96,7 @@
     height: 45vh;
   }
   .item_featured {
-    height: 150vh;
+    height: 100vh;
   }
 }
 /*============== Scren 425=============*/
@@ -118,7 +118,7 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    height: 230vh;
+    height: 190vh;
     width: 100%;
     overflow-x: hidden;
   }
@@ -132,6 +132,6 @@
     height: 100vh;
   }
   .item_footer {
-    height: 70vh;
+    height: 50vh;
   }
 }
