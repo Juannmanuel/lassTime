@@ -83,11 +83,10 @@
   }
   .cardHotSale {
     position: absolute;
-    top: 20rem;
+    top:24rem;
     left: 0.6rem;
-    width: 20rem;
+    width: 23rem;
     height: 14rem;
-    border: 1px solid black;
   }
 }
 @media screen and (max-width: 375px) {
