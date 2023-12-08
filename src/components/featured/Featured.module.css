@@ -185,5 +185,8 @@ padding: 1rem;
    gap: .5rem;
    padding: 0;
   }
+  .p_featured {
+    font-size: 1.5rem;
+  }
 
 }
