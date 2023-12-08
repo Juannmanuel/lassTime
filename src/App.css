@@ -51,7 +51,7 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 25vh;
   width: 100%;
   overflow-x: hidden;
 }
@@ -89,6 +89,9 @@
   .item_sale {
     height: 180vh;
   }
+  .item_footer {
+    height: 32vh;
+  }
 }
 /*============== Scren 425=============*/
 @media (max-width: 425px) {
@@ -121,5 +124,8 @@
   }
   .item{
     height: 100vh;
+  }
+  .item_footer {
+    height: 40vh;
   }
 }
