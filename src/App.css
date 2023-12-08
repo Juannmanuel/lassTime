@@ -118,12 +118,12 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    height: 190vh;
+    height: 210vh;
     width: 100%;
     overflow-x: hidden;
   }
 .item_sale{
-  height: 400vh;
+  height: 350vh;
 }
   .item_nav{
     height: 10vh;
