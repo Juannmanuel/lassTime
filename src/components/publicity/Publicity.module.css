@@ -68,7 +68,27 @@
     padding: 0rem;
   }
   .description_publicity {
-    margin-top: 35%;
+    padding: 8rem 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .description_publicity p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.7rem;
+  }
+  .description_publicity button {
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px #e3b375;
+    background-color: #000;
+    color: #e3b375;
+    width: 13rem;
+    height: 3rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 425px) {

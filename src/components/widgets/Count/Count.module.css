@@ -61,10 +61,14 @@
 /*============== Scren 770=============*/
 @media (max-width: 768px) {
   .count_number {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .main_count h2 {
-    font-size: 1rem;
+    font-size: 2rem;
+  }
+  .p_featured{
+    font-size: 1.3rem;
+    padding: 1.5rem;
   }
 
 }

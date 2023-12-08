@@ -82,10 +82,10 @@
 /*============== Screen 425 =============*/
 @media (max-width: 768px) {
   .main_sale {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 0.5rem;
-    padding: 0.5rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
     height: 100%;
   }
   .products:hover .btn_sale {

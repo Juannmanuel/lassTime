@@ -121,10 +121,16 @@
 /*============== Scren 770=============*/
 @media (max-width: 768px) {
   .viewButton button {
-    top: 85%;
-    left: 15%;
-    width: 8rem;
-    height: 1.5rem;
+    top: 86%;
+    left: 21%;
+    width: 9rem;
+    height: 2rem;
+  }
+  .viewButton p {
+    font-size: 1.5rem;
+  }
+  .viewButton h2 {
+    font-size: 2rem;
   }
 }
 /*============== Scren 425=============*/
