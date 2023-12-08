@@ -130,8 +130,8 @@
 /*============== Scren 425=============*/
 @media (max-width: 425px) {
   .viewButton button {
-    top: 80%;
-    left: 25%;
+    top: 8rem;
+    left: 5.5rem;
     width: 8rem;
     height: 1.8rem;
   }
