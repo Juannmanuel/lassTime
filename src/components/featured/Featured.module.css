@@ -186,7 +186,13 @@ padding: 1rem;
    padding: 0;
   }
   .p_featured {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    padding: 0rem 1rem;
+    height: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
 }
