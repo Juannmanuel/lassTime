@@ -1,20 +1,29 @@
-import style from "./Footer.module.css"
+// Footer.jsx
+
+import React from 'react';
+import styles from './Footer.module.css';
 
 const Footer = () => {
- return (
-    <div>
-         <footer className="mb-10 px-4 text-center text-gray-500">
-      <small className="mb-2 block text-xs">
-        &copy; 2023 Juan Manuel.
-      </small>
-      <p className="text-xs">
-        <span className="font-semibold">Acerca de este sitio web:</span> construido con
-        React y Next.js (App Router y Server Actions), TypeScript, Tailwind CSS,
-        Framer Motion, React Email & Resend, alojado en Vercel.
-      </p>
+  return (
+    <footer className={`${styles.footer}`}>
+      <div className={`${styles.footerText}`}>
+        <small>&copy; 2023 Juan Manuel.</small>
+      </div>
+      <div className={`${styles.footerText}`}>
+        <p>
+          <span className={`${styles.fontSemibold}`}>Acerca de este sitio web:</span>{" "}
+          construido con React y Vite,
+          JavaScript, CSS module, alojado en Vercel.
+        </p>
+      </div>
+      <div className={`${styles.footerText}`}>
+        <p>
+          Este sitio es ficticio sin ningún fin de lucro, solamente educativo.
+          Contacta conmigo si quieres que cree tu página para tu e-commerce.
+        </p>
+      </div>
     </footer>
-    </div>
- )   
-}
+  );
+};
 
-export default Footer
+export default Footer;
