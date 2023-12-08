@@ -98,6 +98,26 @@
 .productCard:hover .productOverlay {
   opacity: 1;
 }
+/*============== Scren 1440=============*/
+@media (max-width: 1440px) {
+  .viewButton button {
+    position: absolute;
+    top: 85%;
+    left: 2.8rem;
+    border: none;
+    width: 13rem;
+    height: 2.5rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 10px #e3b375;
+    background-color: #000;
+    color: #e3b375;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  .viewButton p {
+    font-size: 1.5rem;
+  }
+}
 /*============== Scren 1024=============*/
 @media (max-width: 1024px) {
   .viewButton button {

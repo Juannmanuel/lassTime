@@ -61,18 +61,22 @@
 .button_descriprion{
   display: none
 }
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .publicity_main {
     padding: 1rem 4rem;
   }
   .description_publicity p {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
   .description_publicity button {
-    width: 14rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px #e3b375;
+    background-color: #000;
+    color: #e3b375;
+    width: 13rem;
     height: 3rem;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 768px) {
