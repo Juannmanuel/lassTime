@@ -27,7 +27,10 @@
   height: 100%;
   text-align: center;
   padding: 1rem 2rem;
-  margin-top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 .description_publicity button {

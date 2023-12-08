@@ -53,7 +53,14 @@
   letter-spacing: .5rem;
 }
 /*============== Scren 1440 =============*/
-@media (max-width: 1440px) {}
+@media (max-width: 1440px) {
+  .main_count h2 {
+    font-size: 2.5rem;
+  }
+  .count_number {
+    font-size: 3.5rem;
+  }
+}
 /*============== Scren 1080 =============*/
 @media (max-width: 1440px) {}
 /*============== Scren 1024=============*/

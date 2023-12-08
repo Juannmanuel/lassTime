@@ -48,8 +48,13 @@
     height: 120%;
   }
   .cardHotSale {
-    bottom: 2rem;
-  }
+    position: absolute;
+    width: 38rem;
+    height: 19.5rem;
+    top: 25rem;
+    left: 2rem;
+}
+  
 }
 @media screen and (max-width: 1024px) {
   .header_main {
