@@ -22,6 +22,10 @@
   letter-spacing: 0.1rem;
   font-family: "Bebas Neue", sans-serif;
 }
+.description_featured h2 {
+  margin: 0;
+  padding: 0;
+}
 
 .products_section {
   width: 100%;
@@ -30,7 +34,6 @@
   grid-template-rows: 1.3fr 0.7fr;
   gap: 1rem;
   position: relative;
-
 }
 
 .envio {
@@ -48,7 +51,6 @@
   align-content: center;
 }
 
-
 .containerCards {
   display: flex;
   flex-flow: row nowrap;
@@ -60,27 +62,26 @@
   gap: 1rem;
   padding: 1rem;
 }
-.p_featured{
-margin: 0;
-padding: 1rem;
-font-family: "Josefin Sans", sans-serif;
+.p_featured {
+  margin: 0;
+  padding: 1rem;
+  font-family: "Josefin Sans", sans-serif;
 }
 @media (max-width: 1440px) {
   .containerCards {
-    padding: 4rem .5rem;
+    padding: 4rem 0.5rem;
     height: 100%;
   }
-  .p_featured{
+  .p_featured {
     font-size: 1.4rem;
   }
-
 }
 @media (max-width: 1024px) {
   .featured_main {
     grid-template-columns: 1fr;
-    grid-template-rows: .5fr 1.5fr;
+    grid-template-rows: 0.5fr 1.5fr;
     gap: 0rem;
-    padding: .5rem;
+    padding: 0.5rem;
   }
   .description_featured,
   .products_section,
@@ -90,7 +91,7 @@ font-family: "Josefin Sans", sans-serif;
   .products_section {
     padding: 0rem;
   }
-  .description_featured{
+  .description_featured {
     padding: 0;
     margin: 0;
   }
@@ -100,21 +101,19 @@ font-family: "Josefin Sans", sans-serif;
     padding: 1rem 0rem;
   }
   .envio {
-    padding: 1rem .5rem;
+    padding: 1rem 0.5rem;
   }
-  .p_featured{
+  .p_featured {
     font-size: 1.2rem;
   }
-
-
 }
 
 @media (max-width: 768px) {
   .featured_main {
     grid-template-columns: 1fr;
-    grid-template-rows: .5fr 1.5fr;
+    grid-template-rows: 0.5fr 1.5fr;
     gap: 0rem;
-    padding: .5rem;
+    padding: 0.5rem;
   }
   .description_featured,
   .products_section,
@@ -124,7 +123,7 @@ font-family: "Josefin Sans", sans-serif;
   .products_section {
     padding: 0rem;
   }
-  .description_featured{
+  .description_featured {
     padding: 0;
     margin: 0;
   }
@@ -134,18 +133,18 @@ font-family: "Josefin Sans", sans-serif;
     padding: 1rem 0rem;
   }
   .envio {
-    padding: 1rem .5rem;
+    padding: 1rem 0.5rem;
   }
-  .p_featured{
-    font-size: .9rem;
-    padding: .5rem;
+  .p_featured {
+    font-size: 0.9rem;
+    padding: 0.5rem;
   }
 }
 
 @media (max-width: 425px) {
-  .featured_main{
+  .featured_main {
     grid-template-columns: 1fr;
-    grid-template-rows: .3fr 1.7fr;
+    grid-template-rows: 0.3fr 1.7fr;
   }
   .products_section {
     grid-template-columns: 1fr;
@@ -178,13 +177,12 @@ font-family: "Josefin Sans", sans-serif;
     justify-content: space-between;
     align-items: center;
     gap: 0rem;
-
   }
   .counters {
-   width: 100%;
-   height: 50%;
-   gap: .5rem;
-   padding: 0;
+    width: 100%;
+    height: 50%;
+    gap: 0.5rem;
+    padding: 0;
   }
   .p_featured {
     font-size: 1.1rem;
@@ -196,5 +194,19 @@ font-family: "Josefin Sans", sans-serif;
     align-items: center;
     font-family: "Josefin Sans", sans-serif;
   }
-
+  .description_featured h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+    color: white;
+    backdrop-filter: blur(1px);
+    width: 20rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem
+  }
+  .description_featured p {
+    margin:0;
+    padding: .5rem 1rem;
+    backdrop-filter: blur(2px);
+  }
 }
