@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 .publicity_main {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -28,6 +28,7 @@
   text-align: center;
   padding: 1rem 2rem;
   margin-top: 50%;
+
 }
 .description_publicity button {
   border-radius: 0.5rem;
@@ -36,10 +37,14 @@
   color: rgb(227, 179, 117);
   width: 10rem;
   height: 2rem;
+  margin-top: 1rem;
 
 }
 .description_publicity p {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Whisper', cursive;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
 }
 .description_publicity h2 {
   font-family: "Josefin Sans", sans-serif;
