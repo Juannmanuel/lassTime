@@ -26,6 +26,9 @@
   margin: 0;
   padding: 0;
 }
+.description_featured p {
+  font-size: 1.5rem;
+}
 
 .products_section {
   width: 100%;
@@ -74,6 +77,9 @@
   }
   .p_featured {
     font-size: 1.7rem;
+  }
+  .description_featured h2 {
+    font-size: 4.5rem;
   }
 }
 @media (max-width: 1024px) {
