@@ -20,7 +20,7 @@
   color: white;
   padding: 1.5rem;
   letter-spacing: 0.1rem;
-  font-family: "Bebas Neue", sans-serif;
+
 }
 .description_featured h2 {
   margin: 0;
@@ -28,6 +28,7 @@
 }
 .description_featured p {
   font-size: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .products_section {
