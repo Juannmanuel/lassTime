@@ -11,15 +11,25 @@ const Footer = () => {
       </div>
       <div className={`${styles.footerText}`}>
         <p>
-          <span className={`${styles.fontSemibold}`}>Acerca de este sitio web:</span>{" "}
-          construido con React y Vite,
-          JavaScript, CSS module, alojado en Vercel.
+          <span className={`${styles.fontSemibold}`}>Este rincón digital:</span>{" "}
+          construido con pasión y líneas de código danzantes. React y Vite se mezclan,
+          mientras JavaScript y CSS forman una melodía tecnológica,
+          todo alojado en Vercel, la utopía de los proyectos web.
         </p>
       </div>
       <div className={`${styles.footerText}`}>
         <p>
-          Este sitio es ficticio sin ningún fin de lucro, solamente educativo.
-          Contacta conmigo si quieres que cree tu página para tu e-commerce.
+          ¡Importante! Este sitio es como una utopía digital 🌐: ficticio, pero lleno de posibilidades.
+          ¿Quieres hacer realidad tus proyectos? ¡Contacta conmigo y llevemos tu visión a nuevas alturas!
+        </p>
+      </div>
+      <div className={`${styles.footerText}`}>
+        <p>
+          ¿Listo para la próxima aventura digital? ¡Visita mi{' '}
+          <a href="https://juan-manuel.vercel.app" target="_blank" rel="noopener noreferrer" className={`${styles.link}`}>
+            portfolio
+          </a>
+          {' '}y descubre más!
         </p>
       </div>
     </footer>

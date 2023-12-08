@@ -5,17 +5,13 @@ import Count from "../widgets/Count/Count";
 import ScrollTrigger from "react-scroll-trigger";
 import { useState } from "react";
 
-
 const Featured = () => {
   return (
     <section className={style.featured_main}>
       <header className={style.description_featured}>
         <h2>New Collection 2023</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae eum
-          iusto repellat eligendi repudiandae magni iure. Maiores voluptates
-          facere eius, assumenda hic dolor laudantium repellat, nemo ut modi
-          quidem doloribus?
+          Discover our exquisite "New Collection 2023." Elevate your style with artisan-crafted pieces that blend contemporary fashion with timeless elegance. Each item is a unique masterpiece designed with precision and high-quality materials. Join us on a journey where sophistication meets creativity.
         </p>
       </header>
       <div className={style.products_section}>
@@ -37,11 +33,8 @@ const Featured = () => {
             <Count title={"shipments"} />
           </div>
           <p className={style.p_featured}>
-            - Over 80 products to choose from, ensuring you find the perfect
-            piece. <br />
-            - Over 2,500 satisfied customers trust our quality and attention to
-            detail. <br />- Shipping available to 15 countries, bringing our
-            exquisite jewelry to the world.
+            - 80+ curated pieces for your perfect style. <br />
+            - 2,500+ satisfied customers trust our quality. <br />- Shipping available to 15 countries, sharing our exquisite jewelry worldwide.
           </p>
         </div>
       </div>

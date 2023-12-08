@@ -51,7 +51,7 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  height: 25vh;
+  height: 40vh;
   width: 100%;
   overflow-x: hidden;
 }
@@ -80,6 +80,9 @@
   .item_sale{
     height: 200vh;
   }
+  .item_footer {
+    height: 30vh;
+  }
 }
 /*============== Scren 770=============*/
 @media (max-width: 768px) {
@@ -90,7 +93,10 @@
     height: 180vh;
   }
   .item_footer {
-    height: 32vh;
+    height: 45vh;
+  }
+  .item_featured {
+    height: 150vh;
   }
 }
 /*============== Scren 425=============*/
@@ -112,7 +118,7 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    height: 200vh;
+    height: 230vh;
     width: 100%;
     overflow-x: hidden;
   }
@@ -126,6 +132,6 @@
     height: 100vh;
   }
   .item_footer {
-    height: 40vh;
+    height: 70vh;
   }
 }

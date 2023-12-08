@@ -16,4 +16,6 @@
   .footerText p {
     margin: 0.5rem 0;
   }
-  
+  .link {
+    color: white;
+  }
